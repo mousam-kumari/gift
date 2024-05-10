@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift.AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="santa-icon left-top-santa">🎅</div> <!-- New Santa icon on the left top -->
+        <div class="santa-icon right-top-santa">🎅</div> <!-- New Santa icon on the right top -->
+        <div class="santa-icon left-santa">🎅</div>
+        <h1>
+            <span class="santa-text">Find the Perfect Gift! 🎁</span>
+        </h1>
+        <div class="santa-icon right-santa">🎅</div>
+        <input id="promptInput" type="text" placeholder="Enter prompt...">
+        <button onclick="findGift()">Find Gift</button>
+        <div class="message" id="message">We'll help you find the perfect gift! 🌟</div>
+        <div id="productList" class="product-list"></div>
+        <!-- Fancy animation -->
+        <div class="heart">❤</div>
+        <!-- Dynamic text animation -->
+        <div class="dynamic-text" id="dynamicText">Welcome to Gift.AI</div>
+        <!-- Night mode button -->
+        <button onclick="toggleNightMode()">
+            <span id="modeIcon" class="sun-icon">☀</span> <!-- Initially Sun icon -->
+            <span class="mode-text">Switch Mode</span>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

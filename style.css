@@ -1,0 +1,259 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.message {
+    margin-top: 20px;
+    font-style: italic;
+    color: #666;
+}
+
+.product-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.product-item {
+    margin-bottom: 10px;
+}
+
+.product-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.product-item a:hover {
+    text-decoration: underline;
+}
+
+/* Fancy Animation */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.heart {
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 25px);
+    color: #e74c3c;
+    font-size: 50px;
+    animation: heartbeat 1.5s infinite;
+    align-content: center;
+}
+
+/* Dynamic Text Animation */
+.dynamic-text {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    animation: changeText 5s infinite alternate;
+}
+
+@keyframes changeText {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Night Mode */
+body.night-mode {
+    background-color: #222; /* Darker background for night mode */
+    color: #fff;
+}
+
+.night-mode .container {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.night-mode h1 {
+    color: #fff;
+}
+
+.night-mode .message {
+    color: #ccc;
+}
+
+.night-mode button {
+    background-color: #00FFFF; /* Changed button background color to cyan */
+    color: #fff;
+    border-color: #fff;
+}
+
+.night-mode-text {
+    color: #FFD700 !important; /* Changed dynamic text color to golden */
+}
+
+/* Set product item text color to white in dark mode */
+.night-mode .product-item a {
+    color: #fff;
+}
+
+/* Additional Decorations */
+.container {
+    padding: 40px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.mode-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* CSS code for positioning Santa Claus emojis */
+
+.santa-icon {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-santa {
+    left: 20px;
+}
+
+.right-santa {
+    right: 20px;
+}
+
+.santa-text {
+    position: relative;
+    z-index: 1; /* Ensure text is above Santa Claus emoji */
+}
+
+
+/* Change heart animation color in night mode */
+.night-mode .heart {
+    color: #ff6f61; /* Changed heart animation color to red */
+}
+
+
+
+
+
+
+/* CSS code for positioning Santa Claus emojis */
+
+.santa-icon {
+    font-size: 40px; /* Adjust the size of Santa Claus */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-santa {
+    left: 10px; /* Adjust the distance from the left side */
+}
+
+.right-santa {
+    right: 10px; /* Adjust the distance from the right side */
+}
+
+.santa-text {
+    display: inline-block; /* Ensure inline-block display for proper positioning */
+    position: relative;
+    z-index: 1; /* Ensure text is above Santa Claus emoji */
+}
+
+
+
+
+
+/* CSS code for positioning Santa Claus emojis */
+
+.santa-icon {
+    font-size: 80px; /* Adjust the size of Santa Claus */
+    position: absolute;
+    top: 10px; /* Adjust the distance from the top */
+}
+
+.left-top-santa {
+    top: 80px;
+    
+    left: 30px; /* Adjust the distance from the left */
+}
+
+.right-top-santa {
+    top: 80px;
+    right: 30px; /* Adjust the distance from the right */
+}
+
+.left-santa {
+    top: 80px;
+    left: 30px; /* Adjust the distance from the left */
+}
+
+.right-santa {
+    top: 80px;
+    right: 30px; /* Adjust the distance from the right */
+}
+
+.santa-text {
+    display: inline-block; /* Ensure inline-block display for proper positioning */
+    position: relative;
+    z-index: 1; /* Ensure text is above Santa Claus emoji */
+}
